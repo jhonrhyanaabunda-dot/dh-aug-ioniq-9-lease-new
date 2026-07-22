@@ -56,17 +56,9 @@
       "contentUrl": "https://www.youtube.com/watch?v=ojH4YMlRcpY",
       "thumbnailUrl": "https://img.youtube.com/vi/ojH4YMlRcpY/maxresdefault.jpg",
       "uploadDate": "2026-08-01",
-      "publisher": { "@id": "https://www.hyundaidalton.com/#dealer" }
-    },
-    {
-      "@type": "VideoObject",
-      "@id": "https://www.hyundaidalton.com/ioniq-9-lease/#video-showroom",
-      "name": "Dalton Hyundai National City — hybrids to electrics on the showroom floor",
-      "description": "A Dalton Hyundai National City team member on the showroom floor explaining how the store moves shoppers from hybrid models to Hyundai's electric lineup.",
-      "thumbnailUrl": "https://www.hyundaidalton.com/ioniq-9-lease/dalton-staff-lease-poster.jpg",
-      "uploadDate": "2026-08-01",
-      "contentUrl": "https://www.hyundaidalton.com/ioniq-9-lease/dalton-staff-lease.mp4",
-      "publisher": { "@id": "https://www.hyundaidalton.com/#dealer" }
+      "publisher": {
+        "@id": "https://www.hyundaidalton.com/#dealer"
+      }
     },
     {
       "@type": "Article",
@@ -99,12 +91,25 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Dalton Hyundai National City", "item": "https://www.hyundaidalton.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Hyundai IONIQ 9 Lease Deals", "item": "https://www.hyundaidalton.com/ioniq-9-lease/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Dalton Hyundai National City",
+          "item": "https://www.hyundaidalton.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hyundai IONIQ 9 Lease Deals",
+          "item": "https://www.hyundaidalton.com/ioniq-9-lease/"
+        }
       ]
     },
     {
-      "@type": ["AutoDealer", "LocalBusiness"],
+      "@type": [
+        "AutoDealer",
+        "LocalBusiness"
+      ],
       "@id": "https://www.hyundaidalton.com/#dealer",
       "name": "Dalton Hyundai National City",
       "alternateName": "Frank Hyundai",
@@ -125,13 +130,22 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
           "opens": "09:00",
           "closes": "20:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Sunday"],
+          "dayOfWeek": [
+            "Sunday"
+          ],
           "opens": "10:00",
           "closes": "18:00"
         }
@@ -149,12 +163,30 @@
         }
       ],
       "areaServed": [
-        { "@type": "City", "name": "San Diego" },
-        { "@type": "City", "name": "National City" },
-        { "@type": "City", "name": "Chula Vista" },
-        { "@type": "City", "name": "El Cajon" },
-        { "@type": "City", "name": "Kearny Mesa" },
-        { "@type": "City", "name": "Imperial Beach" }
+        {
+          "@type": "City",
+          "name": "San Diego"
+        },
+        {
+          "@type": "City",
+          "name": "National City"
+        },
+        {
+          "@type": "City",
+          "name": "Chula Vista"
+        },
+        {
+          "@type": "City",
+          "name": "El Cajon"
+        },
+        {
+          "@type": "City",
+          "name": "Kearny Mesa"
+        },
+        {
+          "@type": "City",
+          "name": "Imperial Beach"
+        }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -162,28 +194,78 @@
         "reviewCount": 2586
       },
       "employee": [
-        { "@type": "Person", "name": "Cedric Butler", "jobTitle": "General Manager" },
-        { "@type": "Person", "name": "Sergio Martell", "jobTitle": "Sales Manager" },
-        { "@type": "Person", "name": "Mark Moore", "jobTitle": "Sales Manager" }
+        {
+          "@type": "Person",
+          "name": "Cedric Butler",
+          "jobTitle": "General Manager"
+        },
+        {
+          "@type": "Person",
+          "name": "Sergio Martell",
+          "jobTitle": "Sales Manager"
+        },
+        {
+          "@type": "Person",
+          "name": "Mark Moore",
+          "jobTitle": "Sales Manager"
+        }
       ],
-      "brand": { "@type": "Brand", "name": "Hyundai" }
+      "brand": {
+        "@type": "Brand",
+        "name": "Hyundai"
+      }
     },
     {
       "@type": "Product",
       "@id": "https://www.hyundaidalton.com/ioniq-9-lease/#ioniq9",
       "name": "Hyundai IONIQ 9",
       "category": "Three-row all-electric SUV",
-      "brand": { "@type": "Brand", "name": "Hyundai" },
+      "brand": {
+        "@type": "Brand",
+        "name": "Hyundai"
+      },
       "description": "Hyundai IONIQ 9 three-row all-electric SUV on the dedicated E-GMP platform with 800-volt architecture, up to roughly 335 miles of range, ultra-fast DC charging, the North American Charging Standard (NACS) port, available dual-motor all-wheel drive, and Hyundai's long-term high-voltage battery warranty.",
       "additionalProperty": [
-        { "@type": "PropertyValue", "name": "Platform", "value": "Dedicated E-GMP electric platform" },
-        { "@type": "PropertyValue", "name": "Seating", "value": "Three-row seating with available second-row captain's chairs" },
-        { "@type": "PropertyValue", "name": "Electrical architecture", "value": "800-volt architecture" },
-        { "@type": "PropertyValue", "name": "Range", "value": "Up to roughly 335 miles (RWD); AWD trims lower. Verify by trim at fueleconomy.gov" },
-        { "@type": "PropertyValue", "name": "DC fast charging", "value": "10% to 80% in about 24 minutes on an 800-volt DC fast charger" },
-        { "@type": "PropertyValue", "name": "Charging port", "value": "North American Charging Standard (NACS), Tesla Supercharger access" },
-        { "@type": "PropertyValue", "name": "Drivetrain", "value": "Available dual-motor all-wheel drive" },
-        { "@type": "PropertyValue", "name": "Battery warranty", "value": "10 years / 100,000 miles on the high-voltage battery" }
+        {
+          "@type": "PropertyValue",
+          "name": "Platform",
+          "value": "Dedicated E-GMP electric platform"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Seating",
+          "value": "Three-row seating with available second-row captain's chairs"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Electrical architecture",
+          "value": "800-volt architecture"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Range",
+          "value": "Up to roughly 335 miles (RWD); AWD trims lower. Verify by trim at fueleconomy.gov"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "DC fast charging",
+          "value": "10% to 80% in about 24 minutes on an 800-volt DC fast charger"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Charging port",
+          "value": "North American Charging Standard (NACS), Tesla Supercharger access"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Drivetrain",
+          "value": "Available dual-motor all-wheel drive"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Battery warranty",
+          "value": "10 years / 100,000 miles on the high-voltage battery"
+        }
       ]
     },
     {
@@ -1454,18 +1536,6 @@
         <div class="section-num"><span>01</span><span>From the sales floor</span></div>
         <h2 class="section-h">Start with a number that's <em>actually yours</em>.</h2>
         <p class="lede">Here is the honest truth most lease pages won't tell you: the big <a href="https://www.hyundaidalton.com/newspecials.html" rel="noopener" target="_blank">advertised lease</a> you see in a national Hyundai banner almost never matches what you'll sign for.</p>
-        <div class="staff-note" id="video-showroom">
-          <video class="" controls preload="metadata" playsinline poster="dalton-staff-lease-poster.jpg">
-            <source src="dalton-staff-lease.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="https://www.hyundaidalton.com/contactus.aspx">Contact our team</a> instead.
-          </video>
-          <div class="who">
-            <div class="k">A note from our team</div>
-            <h4>Where the electric lineup fits</h4>
-            <p>One of our team members shot this on our National City showroom floor, walking through how we talk shoppers from the hybrids over to the electrics. The IONIQ 9 is the three-row version of that same 800-volt platform. Lease programs move monthly, so call <a class="tel" href="tel:+16194523217">(619) 452-3217</a> for the number that is live the day you shop.</p>
-          </div>
-        </div>
-
         <p>Those headline figures assume top-tier credit, a specific trim, a set amount due at signing, and a regional incentive structure that may not apply in California. When a customer walked into our National City showroom last month waving a screenshot of a headline IONIQ 9 lease ad, we pulled the actual program details, ran the numbers against our real inventory, and showed them where the gap was, the advertised deal required several thousand dollars down and a credit tier they didn't qualify for. We restructured it to a lower drive-off that fit their budget. The payment was different, but it was real, and they drove the car home.</p>
 
         <p>That's the difference between an ad and a quote. This page walks you through how the IONIQ 9 lease math actually works, what we do here in National City to keep you from overpaying, and how to get a number built around you instead of a stranger in the fine print.</p>
