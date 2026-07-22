@@ -49,6 +49,17 @@
   "@graph": [
     {
       "@type": "VideoObject",
+      "@id": "https://www.hyundaidalton.com/ioniq-9-lease/#video-ioniq9-pov",
+      "name": "2026 Hyundai IONIQ 9: POV Test Drive | Dalton Hyundai",
+      "description": "A POV drive of the 2026 IONIQ 9, filmed and posted by our own team on the Dalton Hyundai channel.",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ojH4YMlRcpY",
+      "contentUrl": "https://www.youtube.com/watch?v=ojH4YMlRcpY",
+      "thumbnailUrl": "https://img.youtube.com/vi/ojH4YMlRcpY/maxresdefault.jpg",
+      "uploadDate": "2026-08-01",
+      "publisher": { "@id": "https://www.hyundaidalton.com/#dealer" }
+    },
+    {
+      "@type": "VideoObject",
       "@id": "https://www.hyundaidalton.com/ioniq-9-lease/#video-showroom",
       "name": "Dalton Hyundai National City — hybrids to electrics on the showroom floor",
       "description": "A Dalton Hyundai National City team member on the showroom floor explaining how the store moves shoppers from hybrid models to Hyundai's electric lineup.",
@@ -1356,6 +1367,15 @@
 
   /* July parity: deck spans the wrap at July's computed metrics (17px/1.7, no cap) */
   .hero .deck { font-size: 17px; line-height: 1.7; max-width: none; margin: 0 0 20px; }
+
+  /* Responsive 16:9 YouTube embed (video-embed rule: nocookie, lazy, captioned) */
+  .yt-embed { margin: 28px 0 8px; }
+  .yt-embed .frame { position: relative; width: 100%; padding-top: 56.25%;
+    background: #000; border-radius: 12px; overflow: hidden; }
+  .yt-embed .frame iframe { position: absolute; top: 0; left: 0; width: 100%;
+    height: 100%; border: 0; }
+  .yt-embed figcaption { margin-top: 10px; font-size: 13px; line-height: 1.5;
+    color: var(--muted); max-width: 70ch; }
 </style>
 </head>
 <body>
@@ -1464,6 +1484,17 @@
         <div class="section-num"><span>02</span><span>Why this EV</span></div>
         <h2 class="section-h">Why the IONIQ 9 is the EV <em>we keep recommending</em>.</h2>
         <p class="lede">The IONIQ 9 is Hyundai's largest electric SUV, a three-row EV built on the same E-GMP 800-volt platform as the IONIQ 5 and IONIQ 6, sized for families who want full-size space without a gas station in the routine.</p>
+        <figure class="yt-embed" id="video-ioniq9-pov">
+          <div class="frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/ojH4YMlRcpY?rel=0&amp;modestbranding=1"
+                    title="2026 Hyundai IONIQ 9: POV Test Drive | Dalton Hyundai"
+                    loading="lazy"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+          <figcaption>A POV drive of the 2026 IONIQ 9, filmed and posted by our own team on the Dalton Hyundai channel.</figcaption>
+        </figure>
+
         <p>When we sat two of our managers in an IONIQ 9 the week the first units landed on our lot, the things that stood out weren't on the window sticker: the second-row captain's chairs that slide and recline, and how quiet the cabin stayed at freeway speed on the 805. It's also a sensible way into a brand-new EV nameplate. The IONIQ 9 only reached U.S. dealers in 2025, so resale and residual values are still settling, and when a model's long-term resale picture is unproven, a lease shifts that depreciation risk to Hyundai Motor Finance instead of leaving it on your shoulders three years from now.</p>
 
         <p>On range, Hyundai's published estimates put the rear-wheel-drive IONIQ 9 at up to roughly 335 miles, with the dual-motor all-wheel-drive versions landing lower depending on wheel size and trim. The EPA publishes the official combined MPGe and range figures by trim at <a href="https://www.fueleconomy.gov" rel="noopener" target="_blank">fueleconomy.gov</a> once each configuration is rated, that's the source we point shoppers to, because it's apples-to-apples across every EV you might be cross-shopping. For a South Bay driver who mostly stays local, range anxiety on an IONIQ 9 is largely a non-issue; for someone road-tripping to Phoenix, the charging stops are the thing to plan around.</p>
