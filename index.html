@@ -48,6 +48,16 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "VideoObject",
+      "@id": "https://www.hyundaidalton.com/ioniq-9-lease/#video-showroom",
+      "name": "Dalton Hyundai National City — hybrids to electrics on the showroom floor",
+      "description": "A Dalton Hyundai National City team member on the showroom floor explaining how the store moves shoppers from hybrid models to Hyundai's electric lineup.",
+      "thumbnailUrl": "https://www.hyundaidalton.com/ioniq-9-lease/dalton-staff-lease-poster.jpg",
+      "uploadDate": "2026-08-01",
+      "contentUrl": "https://www.hyundaidalton.com/ioniq-9-lease/dalton-staff-lease.mp4",
+      "publisher": { "@id": "https://www.hyundaidalton.com/#dealer" }
+    },
+    {
       "@type": "Article",
       "@id": "https://www.hyundaidalton.com/ioniq-9-lease/#article",
       "headline": "Hyundai IONIQ 9 Lease Deals at Dalton Hyundai National City",
@@ -334,9 +344,9 @@
   .hero h1 {
     font-family: var(--display);
     font-weight: 700;
-    font-size: clamp(44px, 6.4vw, 92px);
-    line-height: 1.0;
-    letter-spacing: -0.03em;
+    font-size: clamp(28px, 4.8vw, 64px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
     margin: 0 0 28px;
     color: var(--ink);
     text-wrap: balance;
@@ -1294,6 +1304,55 @@
     }
     .btn:hover .arrow { transform: none; }
   }
+
+  /* ---------- July-template parity (hero CTA, breadcrumbs, rail action, staff note) ---------- */
+  .hero h1 { text-transform: uppercase; }
+  .hero-cta { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin:0 0 32px; }
+  .hero-cta a { display:inline-flex; align-items:center; gap:8px; font-family:var(--display);
+    font-weight:600; font-size:16px; text-decoration:none; border-radius:999px; padding:14px 28px;
+    transition:background .2s ease, color .2s ease, border-color .2s ease; }
+  .hero-cta a.primary { background:var(--blue); color:#fff; border:1px solid var(--blue); }
+  .hero-cta a.primary:hover { background:var(--blue-deep); border-color:var(--blue-deep); }
+  .hero-cta a.secondary { background:transparent; color:var(--blue); border:1px solid var(--rule); }
+  .hero-cta a.secondary:hover { border-color:var(--blue); }
+  .hero-cta .arrow { transition:transform .2s ease; }
+  .hero-cta a:hover .arrow { transform:translateX(3px); }
+  .breadcrumb-bar { border-bottom:1px solid var(--rule-soft); }
+  .breadcrumb-bar nav { max-width:var(--maxw); margin:0 auto; padding:16px 24px; }
+  .breadcrumb-bar ol { list-style:none; display:flex; flex-wrap:wrap; align-items:center;
+    gap:8px; margin:0; padding:0; font-size:13px; color:var(--muted); }
+  .breadcrumb-bar li { display:flex; align-items:center; gap:8px; }
+  .breadcrumb-bar li + li::before { content:"\203A"; color:var(--muted); }
+  .breadcrumb-bar a { color:var(--muted); text-decoration:none; }
+  .breadcrumb-bar a:hover { color:var(--blue); text-decoration:underline; }
+  .rail-action { display:block; text-decoration:none; color:#fff; background:var(--blue);
+    border-radius:var(--radius-md); padding:20px; margin:0 0 16px; transition:background .15s ease; }
+  .rail-action:hover { background:var(--blue-deep); }
+  .rail-action .lbl { font-size:10px; letter-spacing:.2em; text-transform:uppercase;
+    color:rgba(255,255,255,.8); display:block; margin-bottom:8px; }
+  .rail-action strong { font-family:var(--display); font-size:18px; font-weight:600;
+    line-height:1.2; display:block; color:#fff; }
+  .rail-action .sub { font-size:13px; line-height:1.5; color:rgba(255,255,255,.85);
+    display:block; margin-top:8px; }
+  .chip .rail-link { display:inline-block; margin-top:12px; font-size:13px; font-weight:600;
+    color:var(--blue); text-decoration:none; border-bottom:1px solid transparent;
+    transition:border-color .15s ease; }
+  .chip .rail-link:hover { border-bottom-color:var(--blue); }
+  .staff-note { display:flex; gap:28px; align-items:center; flex-wrap:wrap; margin:32px 0 8px;
+    padding:24px; border:1px solid var(--rule); border-radius:14px; background:var(--paper-2,#f6f8fa); }
+  .staff-note video { flex:0 0 auto; width:220px; max-width:100%; aspect-ratio:9/16;
+    display:block; border-radius:12px; background:#000; }
+  .staff-note video.wide { width:100%; max-width:520px; aspect-ratio:16/9; }
+  .staff-note .who { flex:1; min-width:240px; }
+  .staff-note .k { font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--muted); font-weight:600; margin-bottom:8px; }
+  .staff-note h4 { margin:0 0 12px; font-family:var(--display); font-size:19px; font-weight:600;
+    line-height:1.3; color:var(--ink); }
+  .staff-note p { margin:0; font-size:14px; line-height:1.6; color:var(--ink-soft); }
+  @media (max-width:640px) {
+    .staff-note { gap:18px; padding:18px; }
+    .staff-note video { width:100%; max-width:280px; margin:0 auto; }
+  }
 </style>
 </head>
 <body>
@@ -1313,6 +1372,11 @@
       <div class="item"><div class="lbl">Sales</div><div class="val"><a class="tel" href="tel:+16194523217">(619) 452-3217</a><small>Service: <a class="tel" href="tel:+16193145768">(619) 314-5768</a></small></div></div>
       <div class="item"><div class="lbl">Reviews</div><div class="val">4.3 ★ · 2,586+<small>Google · Dalton Hyundai</small></div></div>
     </div>
+      <div class="hero-cta">
+      <a class="primary" href="https://www.hyundaidalton.com/quote.aspx">Build your IONIQ 9 lease <span class="arrow">&rarr;</span></a>
+      <a class="secondary" href="https://www.hyundaidalton.com/contactus.aspx">Talk to sales</a>
+    </div>
+  
   </div>
 
   <figure class="hero-photo full-bleed" role="img" aria-label="Hyundai IONIQ 9 at Dalton Hyundai National City">
@@ -1327,6 +1391,16 @@
     <figcaption class="visually-hidden">A Hyundai IONIQ 9 all-electric SUV at Dalton Hyundai National City, available to lease or finance, serving San Diego, Chula Vista, El Cajon, Kearny Mesa, and Imperial Beach.</figcaption>
   </figure>
 </header>
+<!-- Breadcrumb bar -->
+<div class="breadcrumb-bar">
+ <nav aria-label="Breadcrumb">
+  <ol>
+   <li><a href="https://www.hyundaidalton.com/">Dalton Hyundai National City</a></li>
+   <li><span aria-current="page">Hyundai IONIQ 9 Lease Deals</span></li>
+  </ol>
+ </nav>
+</div>
+
 
 <!-- ARTICLE BODY -->
 <main class="wrap" id="main-content">
@@ -1357,6 +1431,18 @@
         <div class="section-num"><span>01</span><span>From the sales floor</span></div>
         <h2 class="section-h">Start with a number that's <em>actually yours</em>.</h2>
         <p class="lede">Here is the honest truth most lease pages won't tell you: the big <a href="https://www.hyundaidalton.com/newspecials.html" rel="noopener" target="_blank">advertised lease</a> you see in a national Hyundai banner almost never matches what you'll sign for.</p>
+        <div class="staff-note" id="video-showroom">
+          <video class="" controls preload="metadata" playsinline poster="dalton-staff-lease-poster.jpg">
+            <source src="dalton-staff-lease.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="https://www.hyundaidalton.com/contactus.aspx">Contact our team</a> instead.
+          </video>
+          <div class="who">
+            <div class="k">A note from our team</div>
+            <h4>Where the electric lineup fits</h4>
+            <p>One of our team members shot this on our National City showroom floor, walking through how we talk shoppers from the hybrids over to the electrics. The IONIQ 9 is the three-row version of that same 800-volt platform. Lease programs move monthly, so call <a class="tel" href="tel:+16194523217">(619) 452-3217</a> for the number that is live the day you shop.</p>
+          </div>
+        </div>
+
         <p>Those headline figures assume top-tier credit, a specific trim, a set amount due at signing, and a regional incentive structure that may not apply in California. When a customer walked into our National City showroom last month waving a screenshot of a headline IONIQ 9 lease ad, we pulled the actual program details, ran the numbers against our real inventory, and showed them where the gap was, the advertised deal required several thousand dollars down and a credit tier they didn't qualify for. We restructured it to a lower drive-off that fit their budget. The payment was different, but it was real, and they drove the car home.</p>
 
         <p>That's the difference between an ad and a quote. This page walks you through how the IONIQ 9 lease math actually works, what we do here in National City to keep you from overpaying, and how to get a number built around you instead of a stranger in the fine print.</p>
@@ -1703,6 +1789,17 @@
 
     <!-- Right gutter -->
     <aside class="gutter" aria-label="Trust signals">
+      <a class="rail-action" href="https://www.hyundaidalton.com/quote.aspx">
+        <span class="lbl">Buy online</span>
+        <strong>Build your IONIQ 9 lease online</strong>
+        <span class="sub">Reserve and build your deal from home. Start online →</span>
+      </a>
+      <div class="chip">
+        <div class="lbl">Finance &amp; offers</div>
+        <strong style="font-family:var(--display); font-size:18px; line-height:1.2;">Build a payment</strong>
+        <div class="sub">Bring your pre-approval and we will run the real numbers next to it.</div>
+        <a class="rail-link" href="https://www.hyundaidalton.com/finance.aspx">Explore financing &rarr;</a>
+      </div>
       <div class="chip">
         <div class="lbl">Google rating</div>
         <div class="stars">★★★★★</div>
