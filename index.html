@@ -1458,6 +1458,18 @@
     height: 100%; border: 0; }
   .yt-embed figcaption { margin-top: 10px; font-size: 13px; line-height: 1.5;
     color: var(--muted); max-width: 70ch; }
+
+  /* Center spec-strip numbers without .stats full-bleed margins */
+  .spec-strip.centered .item{align-items:center;text-align:center}
+  .spec-strip.centered .num{text-align:center}
+  .spec-strip.centered .lbl{justify-content:center;text-align:center}
+  /* Wide text tokens (Mon-Sat, Frank) fit on one line inside their cells */
+  .spec-strip.stats.fitrow .num{font-size:28px}
+  .spec-strip.stats.fitrow .num small{font-size:12px}
+  .spec-strip.stats.fitrow .item{padding-left:12px;padding-right:12px}
+  /* Center the dark trust-grid stats */
+  .trust-grid .item{align-items:center;text-align:center}
+  .trust-grid .item .lbl{text-align:center;justify-content:center}
 </style>
 </head>
 <body>
@@ -1595,7 +1607,7 @@
         <h3>Why leasing an EV makes sense on warranty</h3>
         <p>One reason an EV lease is comfortable: the factory coverage tends to outlast the lease. Hyundai's new-vehicle limited warranty runs 5 years/60,000 miles, the powertrain warranty runs 10 years/100,000 miles, and the high-voltage battery is covered for 10 years/100,000 miles per Hyundai's published terms. On a standard 36-month lease, you're covered start to finish with room to spare. To confirm a recall or open campaign on a specific VIN, the free lookup at <a href="https://www.nhtsa.gov/recalls" rel="noopener" target="_blank">nhtsa.gov</a> is the authoritative source.</p>
 
-        <div class="spec-strip">
+        <div class="spec-strip centered">
           <div class="item"><div class="num">~335<small> mi</small></div><div class="lbl">Up to, on the rear-wheel-drive IONIQ 9</div></div>
           <div class="item"><div class="num">~24<small> min</small></div><div class="lbl">10-to-80% on an 800-volt DC fast charger</div></div>
           <div class="item"><div class="num">NACS</div><div class="lbl">North American Charging Standard port</div></div>
@@ -1883,7 +1895,7 @@
         </figure>
 
 
-        <div class="spec-strip stats">
+        <div class="spec-strip stats fitrow" style="margin-left:0;margin-right:0">
           <div class="item"><div class="num">4.3<small> ★</small></div><div class="lbl">Google rating across 2,586+ reviews</div></div>
           <div class="item"><div class="num">VIP</div><div class="lbl">Complimentary alignment &amp; tire check every visit</div></div>
           <div class="item"><div class="num">Mon-Sat</div><div class="lbl">Sales 9 AM to 8 PM · Sunday 10 AM to 6 PM</div></div>
