@@ -1474,6 +1474,17 @@
 
   /* Drop caps removed site-wide on this article per review */
   p.lede::first-letter{font-family:inherit;font-weight:inherit;font-size:inherit;line-height:inherit;float:none;padding:0;margin:0;color:inherit}
+
+  /* Band stat row — match the evergreen rendering: compact, left-aligned,
+     no dividers, sentence-case labels. */
+  .findlay-band .trust-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; margin-top:50px; padding-top:40px; border-top:1px solid rgba(255,255,255,.15); }
+  .findlay-band .trust-grid .item { display:block; padding:0; border-right:none; text-align:left; }
+  .findlay-band .trust-grid .item .num, .findlay-band .trust-grid .item .lbl { text-align:left; }
+  .findlay-band .trust-grid .item .num { font-family:var(--display); font-size:17px; font-weight:600; line-height:1.35; letter-spacing:0; color:var(--white); }
+  .findlay-band .trust-grid .item .num small { font-size:13px; font-weight:400; color:rgba(255,255,255,.7); letter-spacing:0; }
+  .findlay-band .trust-grid .item .lbl { font-size:13px; letter-spacing:0; text-transform:none; color:rgba(255,255,255,.7); margin-top:4px; line-height:1.45; max-width:26ch; }
+  @media (max-width:900px){ .findlay-band .trust-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; } }
+  @media (max-width:560px){ .findlay-band .trust-grid { grid-template-columns:minmax(0,1fr); gap:18px; } }
 </style>
 </head>
 <body>
