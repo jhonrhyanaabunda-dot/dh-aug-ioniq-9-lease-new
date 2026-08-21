@@ -1273,6 +1273,8 @@
     .hero-meta { grid-template-columns: 1fr 1fr; gap: 18px; }
     section.s { padding: 48px 0; }
   section.s.s--after-media { padding-top: 20px; }
+  section.s.s--before-media { padding-bottom: 8px; }
+  section.s.s--before-media + figure.photo-block { margin-top: 12px; }
     .trims { grid-template-columns: 1fr; border: none; }
     .trim { border-right: none !important; border-bottom: 1px solid var(--rule) !important; padding: 28px 0; }
     .trim:last-child { border-bottom: none !important; }
@@ -1908,7 +1910,7 @@
       </aside>
 
       <!-- §05 What we do before an IONIQ 9 goes to a lease customer -->
-      <section class="s" id="pre-delivery">
+      <section class="s s--before-media" id="pre-delivery">
         <div class="section-num"><span>05</span><span>Before delivery</span></div>
         <h2 class="section-h">What we do <em>before an IONIQ 9 goes to a lease customer</em>.</h2>
         <p class="lede">A lease is a multi-year relationship, and the condition of the car at delivery matters more on a lease than almost anywhere else, because you're responsible for returning it in good shape.</p>
