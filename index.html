@@ -609,6 +609,10 @@
 
   /* ---------- Section + typography ---------- */
   section.s { scroll-margin-top: 32px; padding: 64px 0; border-top: 1px solid var(--rule); }
+  /* media break spacing — base cascade so it applies on desktop, not only under 760px */
+  section.s.s--after-media { padding-top: 20px; }
+  section.s.s--before-media { padding-bottom: 8px; }
+  section.s.s--before-media + figure.photo-block { margin-top: 12px; }
   section.s:first-of-type { border-top: none; padding-top: 8px; }
   .section-num {
     display: flex; align-items: baseline; gap: 16px;
